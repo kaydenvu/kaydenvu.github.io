@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: peachpuff;
+}
+
+#game-container {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  position: relative;
+  float: auto;
+  margin: auto;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card .back {
+  display: block;
+}
+
+.card.flipped .back {
+  display: none;
+}
+
+.card.flipped .front {
+  display: block;
+}
