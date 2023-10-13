@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS";
+}
+
+body {
+    background: url(background_3.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.hero {
+    display: flex;
+}
+.icon {
+    height: 8rem;
+    padding-left: 1rem;
+}
+
+.hero h1 {
+    color: #bdff91;
+    font-size: 5rem;
+    padding: 0 3rem;
+    filter: drop-shadow(8px 8px 3px black);
+}
+
+h2 {
+    padding: 1rem 0;
+}
+
+.data-box {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.professor,
+.student {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    width: 25rem;
+    margin: 0 10rem;
+    filter: drop-shadow(8px 8px 3px black);
+}
+
+.form-box {
+    color: #bdff91;
+}
+
+.input-box input {
+    background-color: rgba(124, 124, 124, 0.603);
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+.input-box label {
+    font-size: 1.2rem;
+
+}
+
+button {
+    background: linear-gradient(rgb(48, 0, 32), rgb(23, 0, 32), rgb(32, 1, 58));
+    color: #bdff91;
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    transition-duration: 0.4s;
+    cursor: crosshair;
+}
+
+button:hover {
+    filter: brightness(3);
+}
+
+button:active {
+    transform: translate(4px, 4px);
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

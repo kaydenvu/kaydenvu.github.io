@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snuggies Test</title>
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="hero">
+        <img class="icon" src="emblem.png" alt="" />
+        <h1>Database Final Project</h1>
+      </div>
+    </header>
+    <div class="data-box">
+      <div class="professor">
+        <div class="form-box login">
+          <form action="professor.php" method="post">
+            <h2>Professor's</h2>
+            <div class="input-box">
+              <label for="SSN">SSN</label><br />
+              <input type="number" id="SSN" name="SSN" required /><br />
+              <button type="submit">Search</button>
+            </div>
+          </form>
+          <h2>Or</h2>
+          <form action="professor2.php" method="post">
+            <div class="input-box">
+              <label for="CNo">Course Number</label><br />
+              <input type="number" id="CNo" name="CNo" required /><br />
+              <label for="SNo">Section Number</label><br />
+              <input type="number" id="SNo" name="SNo" required /><br />
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="student">
+        <div class="form-box login">
+          <form action="student.php" method="post">
+            <h2>Student's</h2>
+            <div class="input-box">
+              <label for="CNo">Course Number</label><br />
+              <input type="number" id="CNo" name="CNo" required /><br />
+              <button type="submit">Search</button>
+            </div>
+          </form>
+          <form action="student2.php" method="post">
+            <h2>Or</h2>
+            <div class="input-box">
+              <label for="CWID">CWID</label><br />
+              <input type="number" id="CWID" name="CWID" required /><br />
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
